@@ -1,0 +1,47 @@
+body {
+  margin: 0px 0px 0px 0px;
+  background-image: linear-gradient(
+    20deg,
+    rgb(14, 14, 14) 30%,
+    rgba(0, 0, 0, 0.94)
+  );
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow-x: hidden;
+}
+.style {
+  z-index: -1;
+  position: absolute;
+  left: 50%;
+  width: 50%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.025);
+}
+.app {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+}
+.flex-row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: -7px;
+  margin-bottom: 9px;
+}
+
+.btn-group {
+  margin: 18px -2px;
+}
+.btn {
+  margin: 8px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.705);
+}
+
+.btn:hover {
+  transform: scale(1.09);
+  box-shadow: 0px 0px 20px rgb(0, 0, 0);
+  transition: all 400ms;
+}

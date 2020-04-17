@@ -1,0 +1,42 @@
+{
+  "name": "Calculator",
+  "productName": "Electron Calculator",
+  "version": "0.1.0",
+  "mode": "production",
+  "license": "MIT",
+  "main": "main.js",
+  "win": {
+    "target": "squirrel",
+    "icon": "build/icon.ico"
+  },
+  "scripts": {
+    "prod": "webpack --config webpack.build.config.js && electron --noDevServer .",
+    "dev": "webpack-dev-server --hot --host 0.0.0.0 --config=./webpack.dev.config.js",
+    "build": "webpack --config webpack.build.config.js",
+    "package": "webpack --config webpack.build.config.js",
+    "postpackage": "electron-packager ./ --out=./builds"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.5",
+    "babel-preset-react": "^6.24.1",
+    "babili-webpack-plugin": "^0.1.2",
+    "css-loader": "^3.2.0",
+    "electron": "^7.1.2",
+    "electron-packager": "^14.1.1",
+    "extract-text-webpack-plugin": "^4.0.0-beta.0",
+    "file-loader": "^5.0.2",
+    "html-webpack-plugin": "^3.2.0",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "style-loader": "^1.0.1",
+    "webpack": "^4.41.2",
+    "webpack-cli": "^3.3.10",
+    "webpack-dev-server": "^3.9.0"
+  },
+  "dependencies": {
+    "@material-ui/core": "^4.9.10",
+    "react-keyboard-event-handler": "^1.5.4",
+    "string-math": "^1.2.1"
+  }
+}
